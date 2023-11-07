@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-family: roboto mono;
+}
+
+
+.mainBox{
+  display: flex;
+}
+
+.cards{
+  width: 35%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(145deg, rgb(132, 27, 132) , rgb(43, 13, 75,1));
+}
+.cardsOverlay{
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.detailsHolder span:nth-child(1)::after{
+    content: "/";
+    padding-inline-start: 0.5em;
+}
+.cardOne{
+  position: absolute;
+  width: 400px;
+  height: 30vh;
+  background-color: white;
+  right: -100px;
+  border-radius: 10px;
+  top: 18%;
+  padding: 1em 2em;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to left,rgb(132, 27, 132) ,rgb(74, 13, 139));
+}
+
+
+
+.circles{
+  display: flex;
+  align-items: center;
+}
+.circles i:nth-child(1){
+  font-size: 4rem;
+  color: white;
+}
+.circles i:nth-child(2){
+  font-size: 1.5rem;
+  padding-left: 0.4em;
+  color: white;
+}
+.cardOne h1{
+  text-transform: uppercase;
+  margin-top: 1em;
+  font-size: 1.8rem;
+  color: white;
+}
+.detailsHolder{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.detailsHolder p{
+  text-transform: uppercase;
+  color: white;
+}
+.detailsHolder span{
+  text-transform: uppercase;
+  color: white;
+}
+
+
+.cardTwo{
+  position: absolute;
+  width: 400px;
+  height: 30vh;
+  background-color: whitesmoke;
+  right: -200px;
+  border-radius: 10px;
+  top: 52%;
+  padding: 1em 0;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.colorBox{
+  height: 7vh;
+  background-color: rgb(45, 45, 45);
+}
+.colorBoxTwo{
+  height: 5vh;
+  background-color: rgb(156, 168, 183);
+  margin: 1em 3em;
+  border-radius: 5px;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.colorBoxTwo p{
+  font-size: 1rem;
+  color: white;
+}
+
+
+.formArea{
+  width: 65%;
+  height: 100vh;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DetailsForm{
+  width: 40%;
+  height: 50vh;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.DetailsForm > input{
+  width: 100%;
+  height: 6vh;
+  padding: 0 1em;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+}
+.twoInput{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.twoInput > input{
+  width: 40%;
+  height: 6vh;
+  padding: 0 1em;
+  margin: 1em 0;
+}
+.singleInput > input{
+  width: 100%;
+  height: 6vh;
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+.btn{
+  width: 100%;
+  height: 6vh;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 70em) {
+  .mainBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+  }
+  .cardsOverlay{
+    height: 50vh;
+  }
+  .cardOne{
+    left: 5%;
+    top: 52%;
+    z-index: 1;
+  }
+  .cardTwo{
+    right: 5%;
+    top: 10%;
+  }
+
+  .formArea{
+    width: 100%;
+    height: 60vh;
+    margin: 5em 0;
+  }
+  .DetailsForm{
+    width: 70%;
+  }
+}

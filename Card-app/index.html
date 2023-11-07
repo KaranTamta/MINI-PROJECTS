@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <main>
+      <div class="mainBox">
+        <div class="cards">
+          <div class="cardsOverlay">
+            <div class="cardOne" id="cardOne">
+              <div class="circles">
+                <i class="ri-circle-fill"></i>
+                <i class="ri-circle-line"></i>
+              </div>
+              <h1 id="cardNumber">0000 0000 0000 0000</h1>
+              <div class="detailsHolder">
+                <p id="cardHolder">User Name</p>
+                <div>
+                  <span id="monthDisplayer">00</span>
+                  <span id="yearDisplayer">00</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTwo">
+              <div class="colorBox"></div>
+              <div class="colorBoxTwo">
+                <p id="backSideCodeDisplayer">000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="formArea">
+          <form class="DetailsForm">
+            <label class="labelText">Cardholder name</label>
+            <input type="text" id="cardHolderName" placeholder="Enter Cardholder Name">
+
+            <label class="labelText">Card number</label>
+            <input type="text" id="cardHolderNumber" placeholder="Enter Card Number">
+  
+            <div class="container">
+              <div>
+                <label>Exp. date (mm/yy)</label>
+                <div class="twoInput">
+                  <input type="text" id="month" placeholder="MM"/>
+                  <input type="text" id="year" placeholder="YY"/>
+                </div>
+              </div>
+              
+              <div class="singleInput">
+                <label>cvc</label>
+                <input type="text" id="backsideCode" placeholder="e.g. 123"/>
+              </div>
+            </div>
+  
+            <button type="button" class="btn">Confirm</button>
+          </form>
+        </div>
+  
+      </div>
+    </main>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
